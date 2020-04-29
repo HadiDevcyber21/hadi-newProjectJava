@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import java.util.Scanner;
-
+import java.io.*;
 /**
  *
  * @author Jabrixx
  */
 public class KasusArray {
 
-    public static void main(String[] Args) {
-        Scanner input = new Scanner(System.in);
-
+    public static void main(String[] Args)throws IOException {
+        InputStreamReader Keyreader = new InputStreamReader(System.in);
+        BufferedReader input = new BufferedReader(Keyreader);
         int i, j;
         double total = 0;
         String[] jenis, ukuran, nama;
@@ -28,15 +27,16 @@ public class KasusArray {
         pajak = new double[10];
         tobar = new double[10];
         System.out.println("Masukan jumlah data : ");
-        j = input.nextInt();
+        j = Integer.parseInt(input.readLine());
+        
         for (i = 1; i < j; i++) {
             System.out.println("data ke : " + i);
             System.out.println("Merk Helm [kyt/bmc] : ");
-            jenis[i] = input.nextLine();
+            jenis[i] = input.readLine();
             System.out.println("Jumlah Beli : ");
-            jumbel[i] = input.nextInt();
+            jumbel[i] = Integer.parseInt(input.readLine());
             System.out.println("Ukuran :");
-            ukuran[i] = input.nextLine();
+            ukuran[i] = input.readLine();
             System.out.println("");
 
             if (jenis[i].equalsIgnoreCase("1")) {
