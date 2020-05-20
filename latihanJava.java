@@ -66,10 +66,10 @@ public class KasusArray {
         System.out.println("");
 
         for (i = 1; i < j; i++) {
-            System.out.println("Data ke " + i);
-            System.out.println("Jenis Helm " + jenis[i]);
-            System.out.println("Ukuran " + ukuran[i]);
-            System.out.println("Harga " + harga[i]);
+            System.out.println("Data ke : " + i);
+            System.out.println("Jenis Helm : " + jenis[i]);
+            System.out.println("Ukuran : " + ukuran[i]);
+            System.out.println("Harga : " + harga[i]);
             System.out.println("Jumlah Harga " + jumhar[i]);
             System.out.println("Pajak : " + pajak[i]);
             System.out.println("Total Bayar : " + tobar[i]);
